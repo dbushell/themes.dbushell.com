@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en-GB" class="lt-ie9 lt-ie8 no-js"> <![endif]-->
+<!--[if IE 8]> <html lang="en-GB" class="lt-ie9 no-js"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Loading CSS &#8211; Tales</title>
+
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+	<link rel="stylesheet" href="http://themes.dbushell.com/tales/wp-content/themes/tales/assets/css/style.css">
+	<!--<![endif]-->
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<link rel="stylesheet" href="http://themes.dbushell.com/tales/wp-content/themes/tales/assets/css/oldie.css">
+	<![endif]-->
+
+
+
+<script type='text/javascript' src='http://themes.dbushell.com/tales/wp-content/themes/tales/assets/js/loadrunner.min.js?ver=1'></script>
+<link rel='canonical' href='http://themes.dbushell.com/tales/loading-css/' />
+<link rel='shortlink' href='http://themes.dbushell.com/tales/?p=296' />
+<link rel="stylesheet" href="http://themes.dbushell.com/tales/wp-content/themes/tales-child/assets/css/website.css">
+<link rel="shortcut icon" type="image/x-icon" href="http://themes.dbushell.com/tales/wp-content/uploads/sites/4/2014/02/tales.ico">
+	<style type="text/css" data-wp="customizer">
+		html {
+			font-family: 'Merriweather', Georgia, serif;
+		}
+		label, button, input, select, .button, .field, input[type="submit"] {
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		}
+		::selection {
+			background-color: #3d9ccc;
+		}
+		a {
+			color: #3d9ccc;
+			border-color: rgba(61,156,204, 0.5);
+			fill: #3d9ccc;
+		}
+		a:hover, a:focus {
+			color: #226181;
+			border-color: rgba(34,97,129, 0.5);
+			fill: #226181;
+		}
+		.field:focus {
+			border-color: #3d9ccc;
+		}
+		.button, input[type="submit"] {
+			color: #3d9ccc;
+			border-color: #3d9ccc;
+		}
+		.button:hover, .button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+			color: #226181;
+			border-color: #226181;
+		}
+		.button--primary {
+			background-color: #3d9ccc !important;
+		}
+		.button--primary:hover, .button--primary:focus {
+			background-color: #226181 !important;
+		}
+	</style>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Merriweather:400,700,400italic,700italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script></head>
+<body class="page page-id-296 page-template-default" id="top">
+
+<div class="wrapper">
+
+	<header class="block header header--fixed" id="header" role="banner">
+		<div class="block__align">
+			<h1 class="header__title">
+				<a href="http://themes.dbushell.com/tales" title="Tales" rel="home">Tales</a>
+			</h1>
+			<a class="header__nav" href="#nav">
+				<span>jump to navigation</span>
+				<svg class="svg--icon" viewBox="0 0 28 28"><use xlink:href="#svg--nav"></use></svg>
+			</a>
+			<a class="header__search" href="http://themes.dbushell.com/tales/?s=">
+				<span>jump to search</span>
+				<svg class="svg--icon" viewBox="0 0 28 28"><use xlink:href="#svg--search"></use></svg>
+			</a>
+		</div>
+	</header>
+	<!--/#header-->
+
+<main class="main" id="main" role="main">
+
+	<div class="block intro intro--offset" id="banner">
+
+		<div class="block__align">
+			<div class="block__body">
+				<h1>Loading CSS</h1>
+						</div>
+		</div>
+	</div>
+
+	<div class="block sidebar" id="content">
+		<div class="block__align">
+
+											<aside class="block__aside">
+						<div class="menu menu--collapsed">
+							<h2 class="menu__title">
+								<span>Developers</span>
+								Navigation							</h2>
+							<ul class="menu__list"><li class="menu__item menu__item--root menu__item--parent"><a class="menu__link" href="http://themes.dbushell.com/tales/developers/">Developers</a><ul class="menu__list"><li class="menu__item"><a class="menu__link" href="http://themes.dbushell.com/tales/html-and-css/">HTML &#038; CSS</a></li><li class="menu__item menu__item--active"><a class="menu__link" href="http://themes.dbushell.com/tales/loading-css/">Loading CSS</a></li><li class="menu__item"><a class="menu__link" href="http://themes.dbushell.com/tales/svg-icons/">SVG Icons</a></li><li class="menu__item"><a class="menu__link" href="http://themes.dbushell.com/tales/buttons/">Buttons</a></li><li class="menu__item"><a class="menu__link" href="http://themes.dbushell.com/tales/forms/">Forms</a></li></ul></li></ul>
+							<button class="link menu__toggle">
+								<svg class="svg--icon" viewBox="0 0 28 28"><use xlink:href="#svg--nav"></use></svg>
+							</button>
+						</div>
+					</aside>
+
+			<div class="block__body prose">
+				<p>The core Tales theme includes a unique stylesheet for <strong>Internet Explorer 7–8</strong> that provides a semi-fluid desktop design (screenshot below).</p>
+<p>The main CSS is loaded in <code>partials/head.php</code> using <a title="Conditional Comment CSS" href="http://codex.wordpress.org/Conditional_Comment_CSS" target="_blank">conditional comments</a>:</p>
+<pre><code class="language-markup">&lt;!--[if (gt IE 8) | (IEMobile)]&gt;&lt;!--&gt;
+    &lt;link rel="stylesheet" href="/assets/css/style.css"&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;!--[if (lt IE 9) &amp; (!IEMobile)]&gt;
+    &lt;link rel="stylesheet" href="/assets/css/oldie.css"&gt;
+&lt;![endif]--&gt;</code></pre>
+<p>If you&#8217;d prefer, you can remove those lines and load CSS with <code>wp_enqueue_scripts</code>. Look towards the top of <code>functions.php</code> and uncomment these lines (or override with a child theme):</p>
+<pre><code class="language-php">// global $is_IE;
+// wp_enqueue_style('neko__css', get_template_directory_uri() . '/assets/css/' . ( $is_IE ? 'oldie' : 'style' ) . '.css', array(), NEKO__VERSION, 'all');</code></pre>
+<p>The downside of using server-side detection is that it&#8217;s unfriendly to any caching software running in front of WordPress. This is why the conditional loading is default.<br />
+<img class="alignnone size-full wp-image-308" alt="Tales WordPress theme in IE7" src="http://themes.dbushell.com/tales/wp-content/uploads/sites/4/2014/02/tales-in-ie7.png" width="449" height="300" /></p>
+<p>The screenshot above shows Tales in IE 7. IE 7–8 basically get the responsive design at the largest breakpoint which scales down to <code>1024px</code> at its smallest. Optimising for smaller screens isn&#8217;t really necessary for old desktop browsers.</p>
+			</div>
+		</div>
+	</div>
+
+</main>
+<!--/#main-->
+
+
+    <footer class="block footer" role="contentinfo">
+
+        <div class="block__align">
+
+<form class="mailchimp" id="newsletter" action="http://dbushell.us1.list-manage1.com/subscribe/post?u=f1621b8d47b205bc9a898c68f&amp;id=84a4c62ca9" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+    <h4>dbushell.com newsletter</h4>
+    <div class="form form--single">
+    <ul class="form__list">
+        <li class="form__item">
+            <label for="mce-EMAIL">Email Address</label>
+            <input type="email" value="" name="EMAIL" class="field" id="mce-EMAIL" placeholder="me@example.com&hellip;">
+        </li>
+            <li class="form__item">
+            <div style="visibility: hidden; display: none; position: absolute;" aria-hidden="true">
+                <input type="text" name="b_f1621b8d47b205bc9a898c68f_84a4c62ca9" value="">
+            </div>
+            <input type="submit" value="Subscribe" name="subscribe">
+        </li>
+    </ul>
+    </div>
+    <div class="mailchimp__format">
+        <label class="label">Email Format:</label>
+        <label for="mce-EMAILTYPE-0" class="label label--checkbox"><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0" checked> <span>HTML</span></label>
+        <label for="mce-EMAILTYPE-1" class="label label--checkbox"><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"> <span>Text</span></label>
+    </div>
+</form>
+            <ul class="footer__nav">
+<li><a class="footer__link" href="http://themes.dbushell.com/tales/">Home</a></li><li><a class="footer__link" href="http://themes.dbushell.com/tales/updates/">Updates</a></li><li><a class="footer__link" href="http://themes.dbushell.com/tales/documentation/">Documentation</a></li><li><a class="footer__link" href="http://themes.dbushell.com/tales/developers/">Developers</a></li><li><a class="footer__link" href="http://themes.dbushell.com/tales/2015/11/tales-free/">Download</a></li><li><a class="footer__link" href="http://themes.dbushell.com/tales/license/">License</a></li>            </ul>
+                        <div class="footer__small">
+                <h4>The Author</h4>
+                <p class="p--small"><small>Tales is a WordPress theme created by <a href="http://dbushell.com/">David Bushell</a>, an all-round responsive designer and HTML, CSS, &amp; JavaScript developer. You can follow him <a href="http://twitter.com/dbushell">@dbushell</a>.</small></p>
+                <p class="p--small"><small>Copyright &copy; David Bushell</small></p>
+            </div>
+        </div>
+    </footer>
+    <!--/.footer-->
+
+</div>
+<!--/.wrapper-->
+
+<div class="modal search-modal" id="search" role="search">
+	<div class="modal__align">
+		<form class="search-modal__form" method="get" action="http://themes.dbushell.com/tales/">
+			<label for="s">Search</label>
+			<input  class="field search-modal__criteria" type="search" name="s" id="s" placeholder="Search&hellip;">
+			<svg class="svg--icon" viewBox="0 0 28 28"><use xlink:href="#svg--search"></use></svg>
+		</form>
+	</div>
+</div>
+<!--/#search-->
+
+	<nav class="nav" id="nav" role="navigation">
+		<div class="nav__inner">
+			<h2 class="nav__title">Navigation</h2>
+<ul id="nav__list" class="nav__list"><li class="nav__item"><a class="nav__link" href="http://themes.dbushell.com/tales/">Home</a></li><li class="nav__item"><a class="nav__link" href="http://themes.dbushell.com/tales/updates/">Updates</a></li><li class="nav__item"><a class="nav__link" href="http://themes.dbushell.com/tales/features/">Features</a></li><li class="nav__item"><a class="nav__link" href="http://themes.dbushell.com/tales/documentation/">Documentation</a></li><li class="nav__item"><a class="nav__link" href="http://themes.dbushell.com/tales/developers/">Developers</a></li><li class="nav__item"><a class="nav__link" href="http://themes.dbushell.com/tales/2015/11/tales-free/">Download</a></li></ul>			<a class="nav__return" href="#top">
+				<span>return to top of page</span>
+				<svg class="svg--icon" viewBox="0 0 28 28"><use xlink:href="#svg--close"></use></svg>
+			</a>
+		</div>
+	</nav>
+	<!--/#nav-->
+<svg class="svg--source" width="0" height="0">
+	<path id="svg--nav" d="M0 3.5h28v3h-28zM0 12.5h28v3h-28zM0 21.5h28v3h-28z"/>
+	<path id="svg--search" d="M26.458 28c-.394 0-.788-.151-1.089-.45l-8.22-8.222c-.603-.601-.603-1.578 0-2.18.602-.602 1.578-.602 2.178 0l8.221 8.219c.603.604.603 1.579 0 2.183-.301.299-.694.45-1.09.45zM10.532 21.065c-5.808 0-10.532-4.725-10.532-10.533s4.724-10.532 10.532-10.532 10.534 4.724 10.534 10.532c-.001 5.808-4.726 10.533-10.534 10.533zm0-18.497c-4.391 0-7.964 3.572-7.964 7.964 0 4.39 3.572 7.963 7.964 7.963s7.964-3.573 7.964-7.963-3.573-7.964-7.964-7.964z"/>
+	<path id="svg--close" d="M23 25c-.384 0-.768-.146-1.061-.439l-19-19c-.586-.585-.586-1.536 0-2.121.586-.586 1.535-.586 2.121 0l19 19c.586.586.586 1.535 0 2.121-.292.293-.676.439-1.06.439zM4.5 25c-.384 0-.768-.146-1.061-.439-.586-.586-.586-1.535 0-2.121l19-19c.586-.586 1.535-.586 2.121 0 .586.585.586 1.536 0 2.121l-19 19c-.292.293-.676.439-1.06.439z"/>
+	<path id="svg--arrow--left" d="M26.062 12.063h-19.452l1.84-1.839 6.917-6.914c.367-.366.569-.854.569-1.373 0-.517-.202-1.003-.569-1.369-.366-.366-.852-.568-1.37-.568s-1.006.202-1.372.568l-12.021 12.018h-.001l-.048.049c-.401.4-.525.86-.555 1.19l.014.461c.055.362.21.699.449.974l.146.159 12.017 12.014c.366.365.854.567 1.371.567.518 0 1.002-.202 1.367-.569.369-.369.571-.855.571-1.372 0-.518-.202-1.003-.568-1.37l-6.915-6.912-1.84-1.838h19.45c1.068 0 1.938-.87 1.938-1.939 0-1.068-.87-1.937-1.938-1.937z"/>
+	<path id="svg--arrow--right" d="M1.938 12.063h19.452l-1.84-1.839-6.917-6.914c-.367-.366-.569-.854-.569-1.373 0-.517.202-1.003.569-1.369.366-.366.852-.568 1.37-.568s1.006.202 1.372.568l12.021 12.018h.001l.048.049c.401.4.525.86.555 1.19l-.014.461c-.055.362-.21.699-.449.974l-.146.159-12.016 12.014c-.367.365-.855.567-1.372.567-.518 0-1.002-.202-1.367-.569-.369-.369-.571-.855-.571-1.372 0-.518.202-1.003.568-1.37l6.915-6.912 1.84-1.838h-19.45c-1.068-.001-1.938-.871-1.938-1.94 0-1.067.87-1.936 1.938-1.936z"/>
+	<path id="svg--scroll--down" d="M15 16c-.372 0-.743-.138-1.026-.414l-13.549-13.176c-.567-.551-.567-1.445 0-1.997.567-.551 1.485-.551 2.053 0l12.522 12.179 12.522-12.178c.566-.551 1.485-.551 2.053 0 .566.551.566 1.445 0 1.997l-13.549 13.175c-.283.276-.654.414-1.026.414z"/>
+	<path id="svg--pin" d="M23 19c0-3.731-1.432-5.556-2.582-7.021-.898-1.144-1.607-2.047-1.607-3.703 0-1.58.568-2.427 1.17-3.325.521-.776 1.11-1.656 1.166-2.907l.046-1.044h-14.386l.046 1.044c.056 1.262.647 2.138 1.169 2.911.6.89 1.167 1.73 1.167 3.323 0 1.66-.709 2.56-1.606 3.699-1.15 1.46-2.583 3.279-2.583 7.023v1h7.5v6h3v-6h7.5v-1zm-15.959-1c.204-2.362 1.135-3.544 2.114-4.786 1-1.271 2.035-2.583 2.035-4.938 0-2.204-.837-3.444-1.51-4.44-.205-.305-.386-.572-.526-.836h9.689c-.14.264-.319.532-.524.838-.672 1.003-1.509 2.251-1.509 4.438 0 2.347 1.034 3.664 2.034 4.938.979 1.247 1.909 2.432 2.114 4.786h-13.917z"/>
+</svg>
+
+<link rel='stylesheet' id='prism-css'  href='http://themes.dbushell.com/tales/wp-content/themes/tales-child/assets/css/prism.css?ver=1' type='text/css' media='all' />
+<script type='text/javascript' src='http://themes.dbushell.com/tales/wp-includes/js/comment-reply.min.js?ver=4.1'></script>
+<script type='text/javascript' src='http://themes.dbushell.com/tales/wp-content/themes/tales-child/assets/js/jquery-1.11.0.min.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://themes.dbushell.com/tales/wp-content/themes/tales/assets/js/main.min.js?ver=1'></script>
+<script type='text/javascript' src='http://themes.dbushell.com/tales/wp-content/themes/tales-child/assets/js/prism.js?ver=1'></script>
+<script type='text/javascript' src='http://themes.dbushell.com/tales/wp-content/themes/tales-child/assets/js/website.js?ver=1'></script>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9497100-11', 'dbushell.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
