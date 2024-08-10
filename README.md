@@ -7,4 +7,4 @@ Tales WordPress theme demo, download, and documentation.
 
 * * *
 
-Copyright [David Bushell](https://dbushell.com)
+Copyright © [David Bushell](https://dbushell.com)
